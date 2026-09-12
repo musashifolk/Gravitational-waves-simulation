@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Gravitational Waves  </title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- scroll hint -->
+    <div id="scroll-hint">
+      <div class="scroll-line"></div>
+      <span class="scroll-chevron">▾</span>
+      <span class="scroll-label">scroll</span>
+    </div>
+    <!-- main content -->
+    <div class="sim-spacer"></div>
+    <div class="site-content">
+
+      <!-- about -->
+      <section class="about-section">
+        <h1 class="about-title">About</h1>
+        <div class="about-line"></div>
+      </section>
+
+      <!-- section 1: text left, image right -->
+      <section class="content-section">
+        <div class="col-text">
+          <div class="header-wrap">
+            <div class="header-marker"></div>
+            <h2 class="section-header">Gravitational Waves</h2>
+          </div>
+          <p class="section-body">Two massive objects orbiting each
+          other do not simply move through space — they warp it.
+          General relativity tells us mass curves the geometry of
+          spacetime itself, and as these objects accelerate through
+          their orbit, they continuously distort the fabric around
+          them. This simulation visualizes that curvature: the grid
+          you see is not decoration but a representation of spacetime
+          geometry, deforming in real time as the two black holes
+          spiral inward under their mutual gravity.</p>
+        </div>
+        <div class="col-image">
+          <img src="/images/bh-waveform.jpg" alt="Binary black holes
+          and gravitational waveform" class="section-img" />
+        </div>
+      </section>
+
+      <!-- section 2: image left, text right -->
+      <section class="content-section reverse">
+        <div class="col-image">
+          <img src="/images/ligo-signal.jpg" alt="LIGO GW150914
+          strain signal" class="section-img" />
+        </div>
+        <div class="col-text">
+          <div class="header-wrap">
+            <div class="header-marker"></div>
+            <h2 class="section-header">The Chirp</h2>
+          </div>
+          <p class="section-body">As the orbit decays, gravitational
+          wave frequency rises — slowly at first, then explosively
+          in the final moments before merger. This is the chirp: a
+          sweep from near-silence to a sharp crescendo lasting
+          fractions of a second. The higher the frequency, the
+          faster it rises — a runaway acceleration ending only at
+          collision. LIGO detected exactly this signature on
+          September 14 2015, confirming a century-old prediction
+          in 0.2 seconds of signal.</p>
+        </div>
+      </section>
+
+      <!-- two centred images -->
+      <section class="dual-image-section">
+        <div class="dual-img-wrap">
+          <img src="/images/observatory.jpg" alt="Observatory"
+          class="dual-img" />
+        </div>
+        <div class="dual-img-wrap">
+          <img src="/images/blackhole-art.jpg" alt="Black hole
+          accretion disk" class="dual-img" />
+        </div>
+      </section>
+
+      <!-- ligo section: image centred, text below centred -->
+      <section class="ligo-section">
+        <img src="/images/ligo-aerial.jpg" alt="LIGO Hanford aerial"
+        class="ligo-img" />
+        <div class="ligo-text">
+          <div class="header-wrap centred">
+            <div class="header-marker"></div>
+            <h2 class="section-header">The Machine That Heard Space</h2>
+          </div>
+          <p class="section-body centred">LIGO splits a single laser
+          beam down two perpendicular 4km arms and measures whether
+          one arm stretches or compresses relative to the other. A
+          passing gravitational wave changes this distance by less
+          than one ten-thousandth the diameter of a proton. The first
+          detection GW150914 came from two black holes 1.3 billion
+          light years away. In the fraction of a second before they
+          merged, they radiated more power than every star in the
+          observable universe combined.</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+  <p class="sig-name">MUSA</p>
+</footer>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      const hint = document.getElementById('scroll-hint');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) hint.classList.add('hidden');
+        else hint.classList.remove('hidden');
+      });
+    </script>
+  </body>
+</html>
