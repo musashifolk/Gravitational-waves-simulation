@@ -1,4 +1,4 @@
-# Gravitational Wave Inspiral Simulator
+# Gravitational Wave Inspiral Simulator.
 
 A real time interactive simulation of two black holes spiraling into each other and merging visualized as a deforming spacetime grid with outward gravitational wave ripples. Built as a hobby project, mostly because I wanted to see if I could make something that actually looks like the LIGO imagery you see in physics papers lowky i just mixed my intrest for programming and space, at the end of the day it was something i enjoyed building.
 
